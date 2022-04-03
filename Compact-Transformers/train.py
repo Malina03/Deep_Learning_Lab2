@@ -283,6 +283,8 @@ parser.add_argument('--torchscript', dest='torchscript', action='store_true',
                     help='convert model torchscript for inference')
 parser.add_argument('--log-wandb', action='store_true', default=False,
                     help='log training and validation metrics to wandb')
+parser.add_argument('--transfer', action='store_true', default=False,
+                    help='replace output layer with one of correct size, given the number of classes')
 
 
 def _parse_args():
@@ -371,6 +373,9 @@ def main():
     if args.local_rank == 0:
         _logger.info(
             f'Model {safe_model_name(args.model)} created, param count:{sum([m.numel() for m in model.parameters()])}')
+    
+    # if args.transfer:
+    #     model.
 
     data_config = resolve_data_config(vars(args), model=model, verbose=args.local_rank == 0)
 
