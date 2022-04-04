@@ -283,8 +283,8 @@ parser.add_argument('--torchscript', dest='torchscript', action='store_true',
                     help='convert model torchscript for inference')
 parser.add_argument('--log-wandb', action='store_true', default=False,
                     help='log training and validation metrics to wandb')
-parser.add_argument('--transfer', action='store_true', default=False,
-                    help='replace output layer with one of correct size, given the number of classes')
+parser.add_argument('--wandb-name', default=None, type=str, metavar='NAME',
+                    help='name of experiment in wandb')
 
 
 def _parse_args():
@@ -310,7 +310,7 @@ def main():
 
     if args.log_wandb:
         if has_wandb:
-            wandb.init(project=args.experiment, entity="vandrew", config=args)
+            wandb.init(project=args.experiment, name=args.wandb_name entity="vandrew", config=args)
         else:
             _logger.warning("You've requested to log metrics to wandb but package not found. "
                             "Metrics not being logged to wandb, try `pip install wandb`")
