@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=tinyImageNet_test
+#SBATCH --job-name=flowers_test
 #SBATCH --time=00:20:00
 #SBATCH --nodes=1
 #SBATCH --mail-type=END

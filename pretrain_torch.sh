@@ -1,11 +1,14 @@
 #!/bin/bash
-#SBATCH --job-name=tinyImageNet_pretrain
+#SBATCH --job-name=flowers_pretrain
 #SBATCH --time=04:00:00
-#SBATCH --mem=16G
 #SBATCH --nodes=1
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=c.a.voinea@student.rug.nl
+<<<<<<< HEAD
+#SBATCH --partition=gpu
+=======
 #SBATCH --partition=gpus
+>>>>>>> 393d7647a791dae206ebe3be705ee863fd29d905
 #SBATCH --gres=gpu:v100:1
 
 module purge

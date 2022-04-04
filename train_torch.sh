@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=tinyImageNet_train
+#SBATCH --job-name=flowers_train
 #SBATCH --time=04:00:00
 #SBATCH --nodes=1
 #SBATCH --mail-type=ALL
