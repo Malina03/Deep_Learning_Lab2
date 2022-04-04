@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=flowers_train
 #SBATCH --time=07:30:00
-#SBATCH --memory=12G
+#SBATCH --mem=12G
 #SBATCH --nodes=1
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=c.a.voinea@student.rug.nl
