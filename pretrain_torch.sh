@@ -5,7 +5,7 @@
 #SBATCH --nodes=1
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=c.a.voinea@student.rug.nl
-#SBATCH --partition=gpushort
+#SBATCH --partition=gpus
 #SBATCH --gres=gpu:v100:1
 
 module purge
