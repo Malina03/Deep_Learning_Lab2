@@ -15,6 +15,6 @@ source /data/$USER/.envs/deep_torch/bin/activate
 
 cd Compact-Transformers
 
-./dist_train.sh 1 -c configs/tiny_imagenet.yml --model cct_14_7x2_224 --pretrain --transfer --epochs 100 --log-wandb /data/$USER/deepl_data/tiny-imagenet-200/train/
+./dist_train.sh 1 -c configs/flowers.yml --pretrain --epochs 100 --log-wandb /data/$USER/deepl_data/flowers_dataset/
 
 deactivate
