@@ -16,6 +16,6 @@ source /data/$USER/.envs/deep_torch/bin/activate
 cd Compact-Transformers
 
 
-./dist_train.sh 1 -c configs/flowers.yml --warmup-epochs 0 --cooldown-epochs 0 --opt adahessian --pretrain --epochs 2 --wandb-name test_opt_adahessian /data/$USER/deepl_data/flowers_dataset/
+./dist_train.sh 1 -c configs/flowers.yml --warmup-epochs 0 --cooldown-epochs 0 --opt rmsprop --pretrain --epochs 2 --wandb-name test_opt_rmsprop /data/$USER/deepl_data/flowers_dataset/
 
 deactivate

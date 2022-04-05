@@ -21,7 +21,7 @@ cd Compact-Transformers
 
 ./dist_train.sh 1 -c configs/flowers.yml --opt adagrad --wandb-name train_opt_adagrad /data/$USER/deepl_data/flowers_dataset/
 
-./dist_train.sh 1 -c configs/flowers.yml --opt adahessian --wandb-name train_opt_adahessian /data/$USER/deepl_data/flowers_dataset/
+./dist_train.sh 1 -c configs/flowers.yml --opt rmsprop --wandb-name train_opt_rmsprop /data/$USER/deepl_data/flowers_dataset/
 
 ./dist_train.sh 1 -c configs/flowers.yml --no-aug --wandb-name train_no_aug /data/$USER/deepl_data/flowers_dataset/
 

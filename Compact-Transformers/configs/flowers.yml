@@ -31,4 +31,4 @@ workers: 8
 # Logging
 log_wandb: True
 wandb_name: test_wd_0
-output: /data/$USER/cct_runs
+output: /data/s3754243/cct_runs

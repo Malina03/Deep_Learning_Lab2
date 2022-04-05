@@ -21,7 +21,7 @@ cd Compact-Transformers
 
 ./dist_train.sh 1 -c configs/flowers.yml --opt adagrad --pretrain --wandb-name pretrain_opt_adagrad /data/$USER/deepl_data/flowers_dataset/
 
-./dist_train.sh 1 -c configs/flowers.yml --opt adahessian --pretrain --wandb-name pretrain_opt_adahessian /data/$USER/deepl_data/flowers_dataset/
+./dist_train.sh 1 -c configs/flowers.yml --opt rmsprop --pretrain --wandb-name pretrain_opt_rmsprop /data/$USER/deepl_data/flowers_dataset/
 
 ./dist_train.sh 1 -c configs/flowers.yml --no-aug --pretrain --wandb-name pretrain_no_aug /data/$USER/deepl_data/flowers_dataset/
 
